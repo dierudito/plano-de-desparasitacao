@@ -28,3 +28,5 @@ C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Applica
 C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Application\obj\Debug\DM.Desparasitacao.Application.csproj.CopyComplete
 C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Application\obj\Debug\DM.Desparasitacao.Application.dll
 C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Application\obj\Debug\DM.Desparasitacao.Application.pdb
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Application\bin\Debug\DM.Desparasitacao.CrossCutting.Filters.dll
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Application\bin\Debug\DM.Desparasitacao.CrossCutting.Filters.pdb

@@ -1,7 +1,7 @@
 ﻿using System;
 using DM.Desparasitacao.Domain.Models;
 
-namespace DM.Desparasitacao.Domain.Interfaces
+namespace DM.Desparasitacao.Domain.Interfaces.Service
 {
     public interface IService<TEntity> : IDisposable where TEntity : Entity
     {

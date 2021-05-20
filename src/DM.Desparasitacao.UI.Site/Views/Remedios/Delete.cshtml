@@ -1,0 +1,44 @@
+﻿@model DM.Desparasitacao.Application.ViewModels.RemedioViewModel
+
+@{
+    ViewBag.Title = "Deletar Remédio";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+
+<h3>Realmente quer deletar o item a baixo?</h3>
+<div>
+    <br />
+    <h4>Dados do Remédio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnidadeDescricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnidadeDescricao)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a href="@Url.Action("Index")" class="btn btn-primary">Voltar</a>
+        </div>
+    }
+</div>

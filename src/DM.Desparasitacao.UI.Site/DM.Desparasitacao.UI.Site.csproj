@@ -143,7 +143,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SimpleInjectorInitializer.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LuasController.cs" />
+    <Compile Include="Controllers\RemediosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,6 +189,15 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Luas\Index.cshtml" />
+    <Content Include="Views\Luas\Create.cshtml" />
+    <Content Include="Views\Shared\_ErrorSummary.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Remedios\Index.cshtml" />
+    <Content Include="Views\Remedios\Details.cshtml" />
+    <Content Include="Views\Remedios\Create.cshtml" />
+    <Content Include="Views\Remedios\Edit.cshtml" />
+    <Content Include="Views\Remedios\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -204,9 +217,17 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DM.Desparasitacao.Infra.CrossCutting\DM.Desparasitacao.Infra.CrossCutting.csproj">
+    <ProjectReference Include="..\DM.Desparasitacao.Application\DM.Desparasitacao.Application.csproj">
+      <Project>{E1B69869-1DFE-4B24-93F8-3DAD1698AD89}</Project>
+      <Name>DM.Desparasitacao.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DM.Desparasitacao.CrossCutting.Filters\DM.Desparasitacao.CrossCutting.Filters.csproj">
+      <Project>{F015AB29-44A3-4720-A1DD-7993AF28B538}</Project>
+      <Name>DM.Desparasitacao.CrossCutting.Filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DM.Desparasitacao.Infra.CrossCutting.IoC\DM.Desparasitacao.Infra.CrossCutting.IoC.csproj">
       <Project>{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}</Project>
-      <Name>DM.Desparasitacao.Infra.CrossCutting</Name>
+      <Name>DM.Desparasitacao.Infra.CrossCutting.IoC</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

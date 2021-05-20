@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using DM.Desparasitacao.Domain.Models;
 
-namespace DM.Desparasitacao.Domain.Interfaces
+namespace DM.Desparasitacao.Domain.Interfaces.Repository
 {
     public interface IRepositoryRead<TEntity> : IDisposable where TEntity : Entity
     {

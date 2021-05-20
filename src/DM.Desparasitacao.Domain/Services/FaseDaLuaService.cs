@@ -1,6 +1,8 @@
 ﻿using System;
-using DM.Desparasitacao.Domain.Interfaces;
+using DM.Desparasitacao.Domain.Interfaces.Repository;
+using DM.Desparasitacao.Domain.Interfaces.Service;
 using DM.Desparasitacao.Domain.Models;
+using DM.Desparasitacao.Domain.Validations.FasesDaLua;
 
 namespace DM.Desparasitacao.Domain.Services
 {
@@ -16,7 +18,10 @@ namespace DM.Desparasitacao.Domain.Services
         {
             if (!faseDaLua.EhValido()) return faseDaLua;
 
-            _faseDaLuaRepository.Adicionar(faseDaLua);
+            faseDaLua.ValidationResult =
+                new FaseDaLuaEstaAptoParaCadastroValidation(_faseDaLuaRepository).Validate(faseDaLua);
+
+            if (faseDaLua.ValidationResult.IsValid) _faseDaLuaRepository.Adicionar(faseDaLua);
             return faseDaLua;
         }
 

@@ -2,6 +2,8 @@
 using DM.Desparasitacao.Application.Interfaces;
 using DM.Desparasitacao.Application.ViewModels;
 using DM.Desparasitacao.Domain.Interfaces;
+using DM.Desparasitacao.Domain.Interfaces.Repository;
+using DM.Desparasitacao.Domain.Interfaces.Service;
 
 namespace DM.Desparasitacao.Application.Services
 {

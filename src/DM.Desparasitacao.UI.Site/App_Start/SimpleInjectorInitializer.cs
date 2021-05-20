@@ -1,4 +1,6 @@
-using DM.Desparasitacao.Infra.CrossCutting;
+
+
+using DM.Desparasitacao.Infra.CrossCutting.IoC;
 
 [assembly: WebActivator.PostApplicationStartMethod(typeof(DM.Desparasitacao.UI.Site.App_Start.SimpleInjectorInitializer), "Initialize")]
 

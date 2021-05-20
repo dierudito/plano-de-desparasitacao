@@ -1,0 +1,6 @@
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.CrossCutting.Filters\bin\Debug\DM.Desparasitacao.CrossCutting.Filters.dll
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.CrossCutting.Filters\bin\Debug\DM.Desparasitacao.CrossCutting.Filters.pdb
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.CrossCutting.Filters\obj\Debug\DM.Desparasitacao.CrossCutting.Filters.csprojAssemblyReference.cache
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.CrossCutting.Filters\obj\Debug\DM.Desparasitacao.CrossCutting.Filters.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.CrossCutting.Filters\obj\Debug\DM.Desparasitacao.CrossCutting.Filters.dll
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.CrossCutting.Filters\obj\Debug\DM.Desparasitacao.CrossCutting.Filters.pdb

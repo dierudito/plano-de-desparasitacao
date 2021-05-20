@@ -73,6 +73,11 @@
     <Compile Include="Services\FaseDaLuaService.cs" />
     <Compile Include="Services\ProtocoloLuaService.cs" />
     <Compile Include="Services\RemedioService.cs" />
+    <Compile Include="Specifications\FasesDaLua\FaseDaLuaDeveTerOcorrenciaUnicaSpecification.cs" />
+    <Compile Include="Specifications\GenericSpecification.cs" />
+    <Compile Include="Specifications\Remedios\RemedioDeveSerUnicoSpecification.cs" />
+    <Compile Include="Validations\FasesDaLua\FaseDaLuaEstaAptoParaCadastroValidation.cs" />
+    <Compile Include="Validations\Remedios\RemedioEstaAptoParaCadastroValidation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

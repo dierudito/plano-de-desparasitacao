@@ -1,0 +1,63 @@
+﻿@model DM.Desparasitacao.Application.ViewModels.FaseDaLuaViewModel
+
+@{
+    ViewBag.Title = "Adicionar nova Fase da Lua";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <br />
+        <h4>Dados da Fase da Lua</h4>
+        <hr />
+
+        @Html.Partial("_ErrorSummary")
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Lua, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div>
+                    <div class="col-md-2">
+                        @Html.RadioButtonFor(model => model.Lua, "1", new { id = "LuaCheia", @class = "col-md-2" })
+                        @Html.Label("Cheia", new { @class = "col-md-2" })
+                    </div>
+                    <div class="col-md-2">
+                        @Html.RadioButtonFor(model => model.Lua, "2", new { id = "LuaMinguante", @class = "col-md-2" })
+                        @Html.Label("Minguante", new { @class = "col-md-2" })
+                    </div>
+                    <div class="col-md-2">
+                        @Html.RadioButtonFor(model => model.Lua, "3", new { id = "LuaNova", @class = "col-md-2" })
+                        @Html.Label("Nova", new { @class = "col-md-2" })
+                    </div>
+                    <div class="col-md-2">
+                        @Html.RadioButtonFor(model => model.Lua, "4", new { id = "LuaCrescente", @class = "col-md-2" })
+                        @Html.Label("Crescente", new { @class = "col-md-2" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Lua, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DataOcorrencia, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DataOcorrencia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DataOcorrencia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Adicionar" class="btn btn-default" />
+                <a href="@Url.Action("Index")" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

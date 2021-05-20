@@ -1,5 +1,7 @@
 ﻿using System;
 using DM.Desparasitacao.Domain.Interfaces;
+using DM.Desparasitacao.Domain.Interfaces.Repository;
+using DM.Desparasitacao.Domain.Interfaces.Service;
 using DM.Desparasitacao.Domain.Models;
 
 namespace DM.Desparasitacao.Domain.Services

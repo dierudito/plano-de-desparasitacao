@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using DM.Desparasitacao.Domain.Interfaces;
+using DM.Desparasitacao.Domain.Interfaces.Repository;
 using DM.Desparasitacao.Domain.Models;
 using DM.Desparasitacao.Infra.Data.Context;
 

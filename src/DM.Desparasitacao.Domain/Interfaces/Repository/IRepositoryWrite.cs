@@ -1,7 +1,7 @@
 ﻿using System;
 using DM.Desparasitacao.Domain.Models;
 
-namespace DM.Desparasitacao.Domain.Interfaces
+namespace DM.Desparasitacao.Domain.Interfaces.Repository
 {
     public interface IRepositoryWrite<TEntity> : IDisposable where TEntity : Entity
     {

@@ -25,7 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM.Desparasitacao.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM.Desparasitacao.UI.Site", "src\DM.Desparasitacao.UI.Site\DM.Desparasitacao.UI.Site.csproj", "{FD53E97D-9D87-473E-884E-7387CCD114D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM.Desparasitacao.Infra.CrossCutting", "src\DM.Desparasitacao.Infra.CrossCutting\DM.Desparasitacao.Infra.CrossCutting.csproj", "{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM.Desparasitacao.Infra.CrossCutting.IoC", "src\DM.Desparasitacao.Infra.CrossCutting.IoC\DM.Desparasitacao.Infra.CrossCutting.IoC.csproj", "{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM.Desparasitacao.CrossCutting.Filters", "src\DM.Desparasitacao.CrossCutting.Filters\DM.Desparasitacao.CrossCutting.Filters.csproj", "{F015AB29-44A3-4720-A1DD-7993AF28B538}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F015AB29-44A3-4720-A1DD-7993AF28B538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F015AB29-44A3-4720-A1DD-7993AF28B538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F015AB29-44A3-4720-A1DD-7993AF28B538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F015AB29-44A3-4720-A1DD-7993AF28B538}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{E1B69869-1DFE-4B24-93F8-3DAD1698AD89} = {2E6A787C-FC74-4119-89F7-F1A7970ECB41}
 		{FD53E97D-9D87-473E-884E-7387CCD114D3} = {B21EE766-75F0-42EE-B4E4-756B66BC65DD}
 		{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5} = {DEC810EC-0FDE-4C52-9519-1B1BD08D40A9}
+		{F015AB29-44A3-4720-A1DD-7993AF28B538} = {DEC810EC-0FDE-4C52-9519-1B1BD08D40A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C614F540-77E4-49EB-B0A3-6E849F7ADA35}

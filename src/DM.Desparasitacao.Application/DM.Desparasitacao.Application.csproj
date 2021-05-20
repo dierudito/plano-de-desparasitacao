@@ -63,6 +63,7 @@
     <Compile Include="Services\AdministracaoRemedioAppService.cs" />
     <Compile Include="Services\AppServiceBase.cs" />
     <Compile Include="Services\FaseDaLuaAppService.cs" />
+    <Compile Include="Services\RemedioAppService.cs" />
     <Compile Include="ViewModels\AdministracaoRemedioViewModel.cs" />
     <Compile Include="ViewModels\DiaProtocoloLuaViewModel.cs" />
     <Compile Include="ViewModels\FaseDaLuaViewModel.cs" />
@@ -79,6 +80,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DM.Desparasitacao.CrossCutting.Filters\DM.Desparasitacao.CrossCutting.Filters.csproj">
+      <Project>{F015AB29-44A3-4720-A1DD-7993AF28B538}</Project>
+      <Name>DM.Desparasitacao.CrossCutting.Filters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DM.Desparasitacao.Domain\DM.Desparasitacao.Domain.csproj">
       <Project>{8D0EB8D5-E71E-437A-A6DA-BDB21A29A200}</Project>
       <Name>DM.Desparasitacao.Domain</Name>

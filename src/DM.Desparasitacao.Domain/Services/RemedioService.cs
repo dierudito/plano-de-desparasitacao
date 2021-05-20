@@ -1,6 +1,9 @@
 ﻿using System;
 using DM.Desparasitacao.Domain.Interfaces;
+using DM.Desparasitacao.Domain.Interfaces.Repository;
+using DM.Desparasitacao.Domain.Interfaces.Service;
 using DM.Desparasitacao.Domain.Models;
+using DM.Desparasitacao.Domain.Validations.Remedios;
 
 namespace DM.Desparasitacao.Domain.Services
 {
@@ -16,7 +19,9 @@ namespace DM.Desparasitacao.Domain.Services
         {
             if (!cliente.EhValido()) return cliente;
 
-            _remedioRepository.Adicionar(cliente);
+            cliente.ValidationResult = new RemedioEstaAptoParaCadastroValidation(_remedioRepository).Validate(cliente);
+
+            if(cliente.ValidationResult.IsValid) _remedioRepository.Adicionar(cliente);
             return cliente;
         }
 
