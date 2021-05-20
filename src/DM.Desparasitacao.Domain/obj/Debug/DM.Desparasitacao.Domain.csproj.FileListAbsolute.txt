@@ -1,0 +1,7 @@
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\bin\Debug\DM.Desparasitacao.Domain.dll
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\bin\Debug\DM.Desparasitacao.Domain.pdb
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\bin\Debug\DomainValidation.dll
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\obj\Debug\DM.Desparasitacao.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\obj\Debug\DM.Desparasitacao.Domain.csproj.CopyComplete
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\obj\Debug\DM.Desparasitacao.Domain.dll
+C:\Users\Administrador\source\repos\Desparasitacao\src\DM.Desparasitacao.Domain\obj\Debug\DM.Desparasitacao.Domain.pdb

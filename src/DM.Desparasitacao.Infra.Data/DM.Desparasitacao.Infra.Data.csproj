@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DomainValidation">
+      <HintPath>..\..\packages\DomainValidation.1.0.0\lib\net453\DomainValidation.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -51,8 +54,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\DesparasitacaoContext.cs" />
     <Compile Include="Mappings\AdministracaoRemedioMapping.cs" />
+    <Compile Include="Mappings\DiaProtocoloLuaMapping.cs" />
+    <Compile Include="Mappings\FaseDaLuaMapping.cs" />
+    <Compile Include="Mappings\ProtocoloLuaMapping.cs" />
+    <Compile Include="Mappings\RemedioMapping.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AdministracaoRemedioRepository.cs" />
+    <Compile Include="Repository\DiaProtocoloLuaRepository.cs" />
+    <Compile Include="Repository\FaseDaLuaRepository.cs" />
+    <Compile Include="Repository\ProtocoloLuaRepository.cs" />
+    <Compile Include="Repository\RemedioRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="UoW\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,6 +80,7 @@
       <Name>DM.Desparasitacao.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

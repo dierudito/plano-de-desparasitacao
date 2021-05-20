@@ -10,6 +10,7 @@ namespace DM.Desparasitacao.Domain.Models
         public Guid AdministracaoRemedioCorrelacaoId { get; set; }
         public virtual AdministracaoRemedio AdministracaoRemedioFilho { get; set; }
         public decimal Dose { get; set; }
+        public bool Receita { get; set; }
         public Guid DiaProtocoloLuaId { get; set; }
         public virtual DiaProtocoloLua DiaProtocoloLua { get; set; }
         public override bool EhValido()
