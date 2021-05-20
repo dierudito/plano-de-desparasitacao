@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FFA2AA41-5BC9-4FD4-90F9-FC3A736D7AA2}</ProjectGuid>
+    <ProjectGuid>{E1B69869-1DFE-4B24-93F8-3DAD1698AD89}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DM.Desparasitacao.Application</RootNamespace>
@@ -76,13 +76,13 @@
     <Compile Include="ViewModels\UnidadeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DM.Desparasitacao.Domain\DM.Desparasitacao.Domain.csproj">
-      <Project>{D73466A2-B115-497A-BF29-FD80BA736364}</Project>
-      <Name>DM.Desparasitacao.Domain</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\DM.Desparasitacao.Domain\DM.Desparasitacao.Domain.csproj">
+      <Project>{8D0EB8D5-E71E-437A-A6DA-BDB21A29A200}</Project>
+      <Name>DM.Desparasitacao.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

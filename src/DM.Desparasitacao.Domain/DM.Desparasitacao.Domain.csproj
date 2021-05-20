@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D73466A2-B115-497A-BF29-FD80BA736364}</ProjectGuid>
+    <ProjectGuid>{8D0EB8D5-E71E-437A-A6DA-BDB21A29A200}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DM.Desparasitacao.Domain</RootNamespace>
@@ -35,23 +35,29 @@
       <HintPath>..\..\packages\DomainValidation.1.0.0\lib\net453\DomainValidation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\Repository\IAdministracaoRemedioRepository.cs" />
-    <Compile Include="Interfaces\Service\IAdministracaoRemedioService.cs" />
     <Compile Include="Interfaces\Repository\IDiaProtocoloLuaRepository.cs" />
-    <Compile Include="Interfaces\Service\IDiaProtocoloLuaService.cs" />
     <Compile Include="Interfaces\Repository\IFaseDaLuaRepository.cs" />
-    <Compile Include="Interfaces\Service\IFaseDaLuaService.cs" />
     <Compile Include="Interfaces\Repository\IProtocoloLuaRepository.cs" />
-    <Compile Include="Interfaces\Service\IProtocoloLuaService.cs" />
     <Compile Include="Interfaces\Repository\IRemedioRepository.cs" />
-    <Compile Include="Interfaces\Service\IRemedioService.cs" />
     <Compile Include="Interfaces\Repository\IRepositoryRead.cs" />
     <Compile Include="Interfaces\Repository\IRepositoryWrite.cs" />
+    <Compile Include="Interfaces\Service\IAdministracaoRemedioService.cs" />
+    <Compile Include="Interfaces\Service\IDiaProtocoloLuaService.cs" />
+    <Compile Include="Interfaces\Service\IFaseDaLuaService.cs" />
+    <Compile Include="Interfaces\Service\IProtocoloLuaService.cs" />
+    <Compile Include="Interfaces\Service\IRemedioService.cs" />
     <Compile Include="Interfaces\Service\IService.cs" />
-    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Models\AdministracaoRemedio.cs" />
     <Compile Include="Models\DiaProtocoloLua.cs" />
     <Compile Include="Models\Entity.cs" />

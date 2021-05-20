@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F9431B8-F8E3-4AD4-A7D8-3BB69A580004}</ProjectGuid>
+    <ProjectGuid>{6560AAD1-9209-41AF-8A99-B2773BAB43FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DM.Desparasitacao.Infra.Data</RootNamespace>
@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DomainValidation">
+    <Reference Include="DomainValidation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\DomainValidation.1.0.0\lib\net453\DomainValidation.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -76,7 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DM.Desparasitacao.Domain\DM.Desparasitacao.Domain.csproj">
-      <Project>{D73466A2-B115-497A-BF29-FD80BA736364}</Project>
+      <Project>{8D0EB8D5-E71E-437A-A6DA-BDB21A29A200}</Project>
       <Name>DM.Desparasitacao.Domain</Name>
     </ProjectReference>
   </ItemGroup>

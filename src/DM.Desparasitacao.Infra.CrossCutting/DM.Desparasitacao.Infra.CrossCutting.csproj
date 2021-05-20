@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D250CABC-7D9E-4708-9886-8256D2B54658}</ProjectGuid>
+    <ProjectGuid>{C4608EDD-5B84-4219-9F5B-9F4FC7969CB5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DM.Desparasitacao.Infra.CrossCutting</RootNamespace>
@@ -48,21 +48,21 @@
     <Compile Include="SimpleInjectionBootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DM.Desparasitacao.Application\DM.Desparasitacao.Application.csproj">
-      <Project>{FFA2AA41-5BC9-4FD4-90F9-FC3A736D7AA2}</Project>
+      <Project>{E1B69869-1DFE-4B24-93F8-3DAD1698AD89}</Project>
       <Name>DM.Desparasitacao.Application</Name>
     </ProjectReference>
     <ProjectReference Include="..\DM.Desparasitacao.Domain\DM.Desparasitacao.Domain.csproj">
-      <Project>{D73466A2-B115-497A-BF29-FD80BA736364}</Project>
+      <Project>{8D0EB8D5-E71E-437A-A6DA-BDB21A29A200}</Project>
       <Name>DM.Desparasitacao.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\DM.Desparasitacao.Infra.Data\DM.Desparasitacao.Infra.Data.csproj">
-      <Project>{6F9431B8-F8E3-4AD4-A7D8-3BB69A580004}</Project>
+      <Project>{6560AAD1-9209-41AF-8A99-B2773BAB43FF}</Project>
       <Name>DM.Desparasitacao.Infra.Data</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
