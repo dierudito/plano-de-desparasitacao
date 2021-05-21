@@ -11,6 +11,8 @@ namespace DM.Desparasitacao.Application.ViewModels
         }
         [Key]
         public Guid Id { get; set; }
+
+        [ScaffoldColumn(false)]
         public Guid ProtocoloLuaId { get; set; }
         public bool Enema { get; set; }
         public int Dia { get; set; }

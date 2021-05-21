@@ -77,6 +77,7 @@
     <Compile Include="Specifications\GenericSpecification.cs" />
     <Compile Include="Specifications\Remedios\RemedioDeveSerUnicoSpecification.cs" />
     <Compile Include="Validations\FasesDaLua\FaseDaLuaEstaAptoParaCadastroValidation.cs" />
+    <Compile Include="Validations\ProtocolosLua\ProtocoloLuaEstaAptoParaCadastroValidation.cs" />
     <Compile Include="Validations\Remedios\RemedioEstaAptoParaCadastroValidation.cs" />
   </ItemGroup>
   <ItemGroup>

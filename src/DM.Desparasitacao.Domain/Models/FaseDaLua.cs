@@ -7,7 +7,6 @@ namespace DM.Desparasitacao.Domain.Models
     {
         public DateTime DataOcorrencia { get; set; }
         public Lua Lua { get; set; }
-        public virtual ICollection<ProtocoloLua> ProtocolosLua { get; set; }
         public override bool EhValido()
         {
             return true;

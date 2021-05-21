@@ -12,10 +12,6 @@ namespace DM.Desparasitacao.Infra.Data.Mappings
             Property(p => p.QuantidadeDia).IsRequired();
             Property(p => p.DiasDeAntecipacao).IsRequired();
 
-            HasRequired(p => p.FaseDaLua)
-                .WithMany(f => f.ProtocolosLua)
-                .HasForeignKey(p => p.FaseDaLuaId);
-
             ToTable("ProtocolosDaLua");
         }
     }

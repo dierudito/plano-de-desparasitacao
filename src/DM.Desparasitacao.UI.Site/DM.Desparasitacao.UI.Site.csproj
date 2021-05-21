@@ -147,6 +147,7 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LuasController.cs" />
+    <Compile Include="Controllers\ProtocolosController.cs" />
     <Compile Include="Controllers\RemediosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,6 +199,9 @@
     <Content Include="Views\Remedios\Create.cshtml" />
     <Content Include="Views\Remedios\Edit.cshtml" />
     <Content Include="Views\Remedios\Delete.cshtml" />
+    <Content Include="Views\Protocolos\Index.cshtml" />
+    <Content Include="Views\Protocolos\Create.cshtml" />
+    <Content Include="Views\Protocolos\_Form.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

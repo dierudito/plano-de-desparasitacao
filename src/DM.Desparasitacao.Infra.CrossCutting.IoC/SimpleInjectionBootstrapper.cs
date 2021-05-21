@@ -22,6 +22,7 @@ namespace DM.Desparasitacao.Infra.CrossCutting.IoC
             // APP
             container.Register<IFaseDaLuaAppService, FaseDaLuaAppService>(Lifestyle.Scoped);
             container.Register<IRemedioAppService, RemedioAppService>(Lifestyle.Scoped);
+            container.Register<IProtocoloLuaAppService, ProtocoloLuaAppService>(Lifestyle.Scoped);
 
             // Domain
             container.Register<IAdministracaoRemedioService, AdministracaoRemedioService>(Lifestyle.Scoped);

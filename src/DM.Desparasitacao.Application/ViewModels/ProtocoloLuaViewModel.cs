@@ -11,9 +11,16 @@ namespace DM.Desparasitacao.Application.ViewModels
         }
         [Key]
         public Guid Id { get; set; }
-        public Guid FaseDaLuaId { get; set; }
+        [Required(ErrorMessage = "Preencha o campo Lua")]
+        public LuaViewModel Lua { get; set; }
+        
+        [Display(Name = "Número")]
+        public int Numero { get; set; }
         public int QuantidadeDia { get; set; }
         public int DiasDeAntecipacao { get; set; }
+
+        [ScaffoldColumn(false)]
+        public DomainValidation.Validation.ValidationResult ValidationResult { get; set; }
 
     }
 }
